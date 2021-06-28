@@ -1,0 +1,1530 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1110.1623                               -->
+<workbook original-version='18.1' source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dog_id_max_ranks+ (Connexions multiples)' inline='true' name='federated.025i01h1pzpka01en5m5z1lou60i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dognition_data_aggregated_by_dogid' name='excel-direct.0rzc4wm0qu84b0140awoi1l3h31j'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/flavi/Downloads/dognition_data_aggregated_by_dogid.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='dognition_data_no_aggregation_with_zip_code_correction' name='excel-direct.0i7xvhi1ji3tk4168c77b0w7csdt'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/flavi/Downloads/dognition_data_no_aggregation_with_zip_code_correction.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0rzc4wm0qu84b0140awoi1l3h31j' name='dog_id_max_ranks' table='[dog_id_max_ranks$]' type='table'>
+          <columns gridOrigin='A1:AD10001:no:A1:AD10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Dog ID' ordinal='0' />
+            <column datatype='integer' name='Total Tests Completed' ordinal='1' />
+            <column datatype='string' name='Mean ITI (days)' ordinal='2' />
+            <column datatype='real' name='Mean ITI (minutes)' ordinal='3' />
+            <column datatype='string' name='Median ITI (days)' ordinal='4' />
+            <column datatype='real' name='Median ITI (minutes)' ordinal='5' />
+            <column datatype='real' name='Time diff between first and last game (days)' ordinal='6' />
+            <column datatype='real' name='Time diff between first and last game (minutes)' ordinal='7' />
+            <column datatype='string' name='User ID' ordinal='8' />
+            <column datatype='string' name='Gender' ordinal='9' />
+            <column datatype='integer' name='Birthday' ordinal='10' />
+            <column datatype='string' name='Breed' ordinal='11' />
+            <column datatype='string' name='Breed_Type' ordinal='12' />
+            <column datatype='string' name='Breed_Group' ordinal='13' />
+            <column datatype='integer' name='Weight' ordinal='14' />
+            <column datatype='integer' name='Dog_Fixed' ordinal='15' />
+            <column datatype='integer' name='DNA_Tested' ordinal='16' />
+            <column datatype='string' name='Dimension' ordinal='17' />
+            <column datatype='integer' name='Sign_in_Count' ordinal='18' />
+            <column datatype='integer' name='Max_Dogs' ordinal='19' />
+            <column datatype='integer' name='Membership_ID' ordinal='20' />
+            <column datatype='integer' name='Subscribed' ordinal='21' />
+            <column datatype='string' name='City' ordinal='22' />
+            <column datatype='string' name='State' ordinal='23' />
+            <column datatype='string' name='Zip' ordinal='24' />
+            <column datatype='string' name='Country' ordinal='25' />
+            <column datatype='integer' name='Exclude' ordinal='26' />
+            <column datatype='integer' name='Free_Start_User' ordinal='27' />
+            <column datatype='datetime' name='Last_Active_At' ordinal='28' />
+            <column datatype='integer' name='Membership_Type' ordinal='29' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.0rzc4wm0qu84b0140awoi1l3h31j' name='dog_id_max_ranks' table='[dog_id_max_ranks$]' type='table'>
+            <columns gridOrigin='A1:AD10001:no:A1:AD10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='Dog ID' ordinal='0' />
+              <column datatype='integer' name='Total Tests Completed' ordinal='1' />
+              <column datatype='string' name='Mean ITI (days)' ordinal='2' />
+              <column datatype='real' name='Mean ITI (minutes)' ordinal='3' />
+              <column datatype='string' name='Median ITI (days)' ordinal='4' />
+              <column datatype='real' name='Median ITI (minutes)' ordinal='5' />
+              <column datatype='real' name='Time diff between first and last game (days)' ordinal='6' />
+              <column datatype='real' name='Time diff between first and last game (minutes)' ordinal='7' />
+              <column datatype='string' name='User ID' ordinal='8' />
+              <column datatype='string' name='Gender' ordinal='9' />
+              <column datatype='integer' name='Birthday' ordinal='10' />
+              <column datatype='string' name='Breed' ordinal='11' />
+              <column datatype='string' name='Breed_Type' ordinal='12' />
+              <column datatype='string' name='Breed_Group' ordinal='13' />
+              <column datatype='integer' name='Weight' ordinal='14' />
+              <column datatype='integer' name='Dog_Fixed' ordinal='15' />
+              <column datatype='integer' name='DNA_Tested' ordinal='16' />
+              <column datatype='string' name='Dimension' ordinal='17' />
+              <column datatype='integer' name='Sign_in_Count' ordinal='18' />
+              <column datatype='integer' name='Max_Dogs' ordinal='19' />
+              <column datatype='integer' name='Membership_ID' ordinal='20' />
+              <column datatype='integer' name='Subscribed' ordinal='21' />
+              <column datatype='string' name='City' ordinal='22' />
+              <column datatype='string' name='State' ordinal='23' />
+              <column datatype='string' name='Zip' ordinal='24' />
+              <column datatype='string' name='Country' ordinal='25' />
+              <column datatype='integer' name='Exclude' ordinal='26' />
+              <column datatype='integer' name='Free_Start_User' ordinal='27' />
+              <column datatype='datetime' name='Last_Active_At' ordinal='28' />
+              <column datatype='integer' name='Membership_Type' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0i7xvhi1ji3tk4168c77b0w7csdt' name='master_table' table='[master_table$]' type='table'>
+            <columns gridOrigin='A1:AD10001:no:A1:AD10001:0' header='yes' outcome='2'>
+              <column datatype='datetime' name='Created_at' ordinal='0' />
+              <column datatype='datetime' name='Updated_at' ordinal='1' />
+              <column datatype='string' name='User_ID' ordinal='2' />
+              <column datatype='string' name='Dog_ID' ordinal='3' />
+              <column datatype='string' name='Test_name' ordinal='4' />
+              <column datatype='string' name='Subcategory_name' ordinal='5' />
+              <column datatype='string' name='Gender' ordinal='6' />
+              <column datatype='integer' name='Birthday' ordinal='7' />
+              <column datatype='string' name='Breed' ordinal='8' />
+              <column datatype='string' name='Breed_Type' ordinal='9' />
+              <column datatype='string' name='Breed_Group' ordinal='10' />
+              <column datatype='integer' name='Weight' ordinal='11' />
+              <column datatype='integer' name='Dog_Fixed' ordinal='12' />
+              <column datatype='integer' name='DNA_Tested' ordinal='13' />
+              <column datatype='string' name='Dimension' ordinal='14' />
+              <column datatype='integer' name='Sign_in_Count' ordinal='15' />
+              <column datatype='integer' name='Max_Dogs' ordinal='16' />
+              <column datatype='integer' name='Membership_ID' ordinal='17' />
+              <column datatype='integer' name='Subscribed' ordinal='18' />
+              <column datatype='string' name='City' ordinal='19' />
+              <column datatype='string' name='State' ordinal='20' />
+              <column datatype='string' name='Zip' ordinal='21' />
+              <column datatype='string' name='Country' ordinal='22' />
+              <column datatype='integer' name='Exclude' ordinal='23' />
+              <column datatype='integer' name='Free_Start_User' ordinal='24' />
+              <column datatype='datetime' name='Last_Active_At' ordinal='25' />
+              <column datatype='integer' name='Membership_Type' ordinal='26' />
+              <column datatype='string' name='Rating' ordinal='27' />
+              <column datatype='integer' name='Rank_by_UserID' ordinal='28' />
+              <column datatype='integer' name='Rank_by_DogID' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0i7xvhi1ji3tk4168c77b0w7csdt' name='time_zone_correction' table='[time_zone_correction$]' type='table'>
+            <columns gridOrigin='A1:B10001:no:A1:B10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='Zip' ordinal='0' />
+              <column datatype='integer' name='Diff from UTC' ordinal='1' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Birthday (master!table)]' value='[master_table].[Birthday]' />
+          <map key='[Birthday]' value='[dog_id_max_ranks].[Birthday]' />
+          <map key='[Breed (master!table)]' value='[master_table].[Breed]' />
+          <map key='[Breed]' value='[dog_id_max_ranks].[Breed]' />
+          <map key='[Breed_Group (master!table)]' value='[master_table].[Breed_Group]' />
+          <map key='[Breed_Group]' value='[dog_id_max_ranks].[Breed_Group]' />
+          <map key='[Breed_Type (master!table)]' value='[master_table].[Breed_Type]' />
+          <map key='[Breed_Type]' value='[dog_id_max_ranks].[Breed_Type]' />
+          <map key='[City (master!table)]' value='[master_table].[City]' />
+          <map key='[City]' value='[dog_id_max_ranks].[City]' />
+          <map key='[Country (master!table)]' value='[master_table].[Country]' />
+          <map key='[Country]' value='[dog_id_max_ranks].[Country]' />
+          <map key='[Created_at]' value='[master_table].[Created_at]' />
+          <map key='[DNA_Tested (master!table)]' value='[master_table].[DNA_Tested]' />
+          <map key='[DNA_Tested]' value='[dog_id_max_ranks].[DNA_Tested]' />
+          <map key='[Diff from UTC]' value='[time_zone_correction].[Diff from UTC]' />
+          <map key='[Dimension (master!table)]' value='[master_table].[Dimension]' />
+          <map key='[Dimension]' value='[dog_id_max_ranks].[Dimension]' />
+          <map key='[Dog ID]' value='[dog_id_max_ranks].[Dog ID]' />
+          <map key='[Dog_Fixed (master!table)]' value='[master_table].[Dog_Fixed]' />
+          <map key='[Dog_Fixed]' value='[dog_id_max_ranks].[Dog_Fixed]' />
+          <map key='[Dog_ID]' value='[master_table].[Dog_ID]' />
+          <map key='[Exclude (master!table)]' value='[master_table].[Exclude]' />
+          <map key='[Exclude]' value='[dog_id_max_ranks].[Exclude]' />
+          <map key='[Free_Start_User (master!table)]' value='[master_table].[Free_Start_User]' />
+          <map key='[Free_Start_User]' value='[dog_id_max_ranks].[Free_Start_User]' />
+          <map key='[Gender (master!table)]' value='[master_table].[Gender]' />
+          <map key='[Gender]' value='[dog_id_max_ranks].[Gender]' />
+          <map key='[Last_Active_At (master!table)]' value='[master_table].[Last_Active_At]' />
+          <map key='[Last_Active_At]' value='[dog_id_max_ranks].[Last_Active_At]' />
+          <map key='[Max_Dogs (master!table)]' value='[master_table].[Max_Dogs]' />
+          <map key='[Max_Dogs]' value='[dog_id_max_ranks].[Max_Dogs]' />
+          <map key='[Mean ITI (days)]' value='[dog_id_max_ranks].[Mean ITI (days)]' />
+          <map key='[Mean ITI (minutes)]' value='[dog_id_max_ranks].[Mean ITI (minutes)]' />
+          <map key='[Median ITI (days)]' value='[dog_id_max_ranks].[Median ITI (days)]' />
+          <map key='[Median ITI (minutes)]' value='[dog_id_max_ranks].[Median ITI (minutes)]' />
+          <map key='[Membership_ID (master!table)]' value='[master_table].[Membership_ID]' />
+          <map key='[Membership_ID]' value='[dog_id_max_ranks].[Membership_ID]' />
+          <map key='[Membership_Type (master!table)]' value='[master_table].[Membership_Type]' />
+          <map key='[Membership_Type]' value='[dog_id_max_ranks].[Membership_Type]' />
+          <map key='[Rank_by_DogID]' value='[master_table].[Rank_by_DogID]' />
+          <map key='[Rank_by_UserID]' value='[master_table].[Rank_by_UserID]' />
+          <map key='[Rating]' value='[master_table].[Rating]' />
+          <map key='[Sign_in_Count (master!table)]' value='[master_table].[Sign_in_Count]' />
+          <map key='[Sign_in_Count]' value='[dog_id_max_ranks].[Sign_in_Count]' />
+          <map key='[State (master!table)]' value='[master_table].[State]' />
+          <map key='[State]' value='[dog_id_max_ranks].[State]' />
+          <map key='[Subcategory_name]' value='[master_table].[Subcategory_name]' />
+          <map key='[Subscribed (master!table)]' value='[master_table].[Subscribed]' />
+          <map key='[Subscribed]' value='[dog_id_max_ranks].[Subscribed]' />
+          <map key='[Test_name]' value='[master_table].[Test_name]' />
+          <map key='[Time diff between first and last game (days)]' value='[dog_id_max_ranks].[Time diff between first and last game (days)]' />
+          <map key='[Time diff between first and last game (minutes)]' value='[dog_id_max_ranks].[Time diff between first and last game (minutes)]' />
+          <map key='[Total Tests Completed]' value='[dog_id_max_ranks].[Total Tests Completed]' />
+          <map key='[Updated_at]' value='[master_table].[Updated_at]' />
+          <map key='[User ID]' value='[dog_id_max_ranks].[User ID]' />
+          <map key='[User_ID]' value='[master_table].[User_ID]' />
+          <map key='[Weight (master!table)]' value='[master_table].[Weight]' />
+          <map key='[Weight]' value='[dog_id_max_ranks].[Weight]' />
+          <map key='[Zip (master!table)]' value='[master_table].[Zip]' />
+          <map key='[Zip (time!zone!correction)]' value='[time_zone_correction].[Zip]' />
+          <map key='[Zip]' value='[dog_id_max_ranks].[Zip]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD10001:no:A1:AD10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD10001:no:A1:AD10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[time_zone_correction]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B10001:no:A1:B10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dog ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dog ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dog ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Tests Completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Tests Completed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Total Tests Completed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean ITI (days)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Mean ITI (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Mean ITI (days)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean ITI (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean ITI (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Mean ITI (minutes)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median ITI (days)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Median ITI (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Median ITI (days)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median ITI (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median ITI (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Median ITI (minutes)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time diff between first and last game (days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time diff between first and last game (days)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Time diff between first and last game (days)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time diff between first and last game (minutes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Time diff between first and last game (minutes)]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Time diff between first and last game (minutes)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>User ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birthday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birthday]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Birthday</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Type]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed_Type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Group]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Breed_Group</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dog_Fixed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dog_Fixed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dog_Fixed</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DNA_Tested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DNA_Tested]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>DNA_Tested</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dimension</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dimension]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Dimension</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sign_in_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sign_in_Count]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Sign_in_Count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_Dogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_Dogs]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Max_Dogs</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_ID]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Membership_ID</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subscribed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subscribed]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Subscribed</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclude</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exclude]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Exclude</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free_Start_User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Free_Start_User]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Free_Start_User</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Active_At</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Last_Active_At]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Last_Active_At</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_Type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_Type]</local-name>
+            <parent-name>[dog_id_max_ranks]</parent-name>
+            <remote-alias>Membership_Type</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Created_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Created_at]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Created_at</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Updated_at]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Updated_at</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>User_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[User_ID]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>User_ID</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dog_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dog_ID]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Dog_ID</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Test_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Test_name]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Test_name</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subcategory_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Subcategory_name]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Subcategory_name</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Birthday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Birthday (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Birthday</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Breed</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Type (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Breed_Type</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breed_Group</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Breed_Group (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Breed_Group</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Weight (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dog_Fixed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Dog_Fixed (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Dog_Fixed</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DNA_Tested</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DNA_Tested (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>DNA_Tested</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dimension</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dimension (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Dimension</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sign_in_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sign_in_Count (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Sign_in_Count</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max_Dogs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Max_Dogs (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Max_Dogs</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_ID (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Membership_ID</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subscribed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Subscribed (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Subscribed</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exclude</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Exclude (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Exclude</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free_Start_User</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Free_Start_User (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Free_Start_User</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Active_At</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Last_Active_At (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Last_Active_At</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Membership_Type</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Membership_Type (master!table)]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Membership_Type</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank_by_UserID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank_by_UserID]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Rank_by_UserID</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank_by_DogID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank_by_DogID]</local-name>
+            <parent-name>[master_table]</parent-name>
+            <remote-alias>Rank_by_DogID</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[master!table_932387C87A524AA4ADBBE045B2CC719F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zip (time!zone!correction)]</local-name>
+            <parent-name>[time_zone_correction]</parent-name>
+            <remote-alias>Zip</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LFR_RFR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time!zone!correction_E0694DBE4329424F88EDC326FC40D61A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diff from UTC</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diff from UTC]</local-name>
+            <parent-name>[time_zone_correction]</parent-name>
+            <remote-alias>Diff from UTC</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[time!zone!correction_E0694DBE4329424F88EDC326FC40D61A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Breed Group (master!table)' datatype='string' name='[Breed_Group (master!table)]' role='dimension' type='nominal' />
+      <column caption='Breed Group' datatype='string' name='[Breed_Group]' role='dimension' type='nominal' />
+      <column caption='Breed Type (master!table)' datatype='string' name='[Breed_Type (master!table)]' role='dimension' type='nominal' />
+      <column caption='Breed Type' datatype='string' name='[Breed_Type]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City (master!table)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country (master!table)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Created at' datatype='datetime' name='[Created_at]' role='dimension' type='ordinal' />
+      <column caption='DNA Tested (master!table)' datatype='integer' name='[DNA_Tested (master!table)]' role='measure' type='quantitative' />
+      <column caption='DNA Tested' datatype='integer' name='[DNA_Tested]' role='measure' type='quantitative' />
+      <column caption='Dog Fixed (master!table)' datatype='integer' name='[Dog_Fixed (master!table)]' role='measure' type='quantitative' />
+      <column caption='Dog Fixed' datatype='integer' name='[Dog_Fixed]' role='measure' type='quantitative' />
+      <column caption='Dog ID1' datatype='string' name='[Dog_ID]' role='dimension' type='nominal' />
+      <column caption='Free Start User (master!table)' datatype='integer' name='[Free_Start_User (master!table)]' role='measure' type='quantitative' />
+      <column caption='Free Start User' datatype='integer' name='[Free_Start_User]' role='measure' type='quantitative' />
+      <column caption='Last Active At (master!table)' datatype='datetime' name='[Last_Active_At (master!table)]' role='dimension' type='ordinal' />
+      <column caption='Last Active At' datatype='datetime' name='[Last_Active_At]' role='dimension' type='ordinal' />
+      <column caption='Max Dogs (master!table)' datatype='integer' name='[Max_Dogs (master!table)]' role='measure' type='quantitative' />
+      <column caption='Max Dogs' datatype='integer' name='[Max_Dogs]' role='measure' type='quantitative' />
+      <column caption='Membership ID (master!table)' datatype='integer' name='[Membership_ID (master!table)]' role='dimension' type='ordinal' />
+      <column caption='Membership ID' datatype='integer' name='[Membership_ID]' role='dimension' type='ordinal' />
+      <column caption='Membership Type (master!table)' datatype='integer' name='[Membership_Type (master!table)]' role='measure' type='quantitative' />
+      <column caption='Membership Type' datatype='integer' name='[Membership_Type]' role='measure' type='quantitative' />
+      <column caption='Rank by DogID' datatype='integer' name='[Rank_by_DogID]' role='dimension' type='ordinal' />
+      <column caption='Rank by UserID' datatype='integer' name='[Rank_by_UserID]' role='dimension' type='ordinal' />
+      <column caption='Sign in Count (master!table)' datatype='integer' name='[Sign_in_Count (master!table)]' role='measure' type='quantitative' />
+      <column caption='Sign in Count' datatype='integer' name='[Sign_in_Count]' role='measure' type='quantitative' />
+      <column datatype='string' name='[State (master!table)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Subcategory name' datatype='string' name='[Subcategory_name]' role='dimension' type='nominal' />
+      <column caption='Test name' datatype='string' name='[Test_name]' role='dimension' type='nominal' />
+      <column caption='Updated at' datatype='datetime' name='[Updated_at]' role='dimension' type='ordinal' />
+      <column caption='User ID1' datatype='string' name='[User_ID]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Zip (master!table)]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[Zip (time!zone!correction)]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[Zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='dog_id_max_ranks' datatype='table' name='[__tableau_internal_object_id__].[dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='master_table' datatype='table' name='[__tableau_internal_object_id__].[master!table_932387C87A524AA4ADBBE045B2CC719F]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='time_zone_correction' datatype='table' name='[__tableau_internal_object_id__].[time!zone!correction_E0694DBE4329424F88EDC326FC40D61A]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order='descending' field-sort-order-type='alphabetical-order' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dog_id_max_ranks' id='dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C'>
+            <properties context=''>
+              <relation connection='excel-direct.0rzc4wm0qu84b0140awoi1l3h31j' name='dog_id_max_ranks' table='[dog_id_max_ranks$]' type='table'>
+                <columns gridOrigin='A1:AD10001:no:A1:AD10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Dog ID' ordinal='0' />
+                  <column datatype='integer' name='Total Tests Completed' ordinal='1' />
+                  <column datatype='string' name='Mean ITI (days)' ordinal='2' />
+                  <column datatype='real' name='Mean ITI (minutes)' ordinal='3' />
+                  <column datatype='string' name='Median ITI (days)' ordinal='4' />
+                  <column datatype='real' name='Median ITI (minutes)' ordinal='5' />
+                  <column datatype='real' name='Time diff between first and last game (days)' ordinal='6' />
+                  <column datatype='real' name='Time diff between first and last game (minutes)' ordinal='7' />
+                  <column datatype='string' name='User ID' ordinal='8' />
+                  <column datatype='string' name='Gender' ordinal='9' />
+                  <column datatype='integer' name='Birthday' ordinal='10' />
+                  <column datatype='string' name='Breed' ordinal='11' />
+                  <column datatype='string' name='Breed_Type' ordinal='12' />
+                  <column datatype='string' name='Breed_Group' ordinal='13' />
+                  <column datatype='integer' name='Weight' ordinal='14' />
+                  <column datatype='integer' name='Dog_Fixed' ordinal='15' />
+                  <column datatype='integer' name='DNA_Tested' ordinal='16' />
+                  <column datatype='string' name='Dimension' ordinal='17' />
+                  <column datatype='integer' name='Sign_in_Count' ordinal='18' />
+                  <column datatype='integer' name='Max_Dogs' ordinal='19' />
+                  <column datatype='integer' name='Membership_ID' ordinal='20' />
+                  <column datatype='integer' name='Subscribed' ordinal='21' />
+                  <column datatype='string' name='City' ordinal='22' />
+                  <column datatype='string' name='State' ordinal='23' />
+                  <column datatype='string' name='Zip' ordinal='24' />
+                  <column datatype='string' name='Country' ordinal='25' />
+                  <column datatype='integer' name='Exclude' ordinal='26' />
+                  <column datatype='integer' name='Free_Start_User' ordinal='27' />
+                  <column datatype='datetime' name='Last_Active_At' ordinal='28' />
+                  <column datatype='integer' name='Membership_Type' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='master_table' id='master!table_932387C87A524AA4ADBBE045B2CC719F'>
+            <properties context=''>
+              <relation connection='excel-direct.0i7xvhi1ji3tk4168c77b0w7csdt' name='master_table' table='[master_table$]' type='table'>
+                <columns gridOrigin='A1:AD10001:no:A1:AD10001:0' header='yes' outcome='2'>
+                  <column datatype='datetime' name='Created_at' ordinal='0' />
+                  <column datatype='datetime' name='Updated_at' ordinal='1' />
+                  <column datatype='string' name='User_ID' ordinal='2' />
+                  <column datatype='string' name='Dog_ID' ordinal='3' />
+                  <column datatype='string' name='Test_name' ordinal='4' />
+                  <column datatype='string' name='Subcategory_name' ordinal='5' />
+                  <column datatype='string' name='Gender' ordinal='6' />
+                  <column datatype='integer' name='Birthday' ordinal='7' />
+                  <column datatype='string' name='Breed' ordinal='8' />
+                  <column datatype='string' name='Breed_Type' ordinal='9' />
+                  <column datatype='string' name='Breed_Group' ordinal='10' />
+                  <column datatype='integer' name='Weight' ordinal='11' />
+                  <column datatype='integer' name='Dog_Fixed' ordinal='12' />
+                  <column datatype='integer' name='DNA_Tested' ordinal='13' />
+                  <column datatype='string' name='Dimension' ordinal='14' />
+                  <column datatype='integer' name='Sign_in_Count' ordinal='15' />
+                  <column datatype='integer' name='Max_Dogs' ordinal='16' />
+                  <column datatype='integer' name='Membership_ID' ordinal='17' />
+                  <column datatype='integer' name='Subscribed' ordinal='18' />
+                  <column datatype='string' name='City' ordinal='19' />
+                  <column datatype='string' name='State' ordinal='20' />
+                  <column datatype='string' name='Zip' ordinal='21' />
+                  <column datatype='string' name='Country' ordinal='22' />
+                  <column datatype='integer' name='Exclude' ordinal='23' />
+                  <column datatype='integer' name='Free_Start_User' ordinal='24' />
+                  <column datatype='datetime' name='Last_Active_At' ordinal='25' />
+                  <column datatype='integer' name='Membership_Type' ordinal='26' />
+                  <column datatype='string' name='Rating' ordinal='27' />
+                  <column datatype='integer' name='Rank_by_UserID' ordinal='28' />
+                  <column datatype='integer' name='Rank_by_DogID' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='time_zone_correction' id='time!zone!correction_E0694DBE4329424F88EDC326FC40D61A'>
+            <properties context=''>
+              <relation connection='excel-direct.0i7xvhi1ji3tk4168c77b0w7csdt' name='time_zone_correction' table='[time_zone_correction$]' type='table'>
+                <columns gridOrigin='A1:B10001:no:A1:B10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Zip' ordinal='0' />
+                  <column datatype='integer' name='Diff from UTC' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Dog ID]' />
+              <expression op='[Dog_ID]' />
+            </expression>
+            <first-end-point object-id='dog!id!max!ranks_4DE38B39BC0441C29ABBDB975C44A70C' />
+            <second-end-point object-id='master!table_932387C87A524AA4ADBBE045B2CC719F' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Zip (master!table)]' />
+              <expression op='[Zip (time!zone!correction)]' />
+            </expression>
+            <first-end-point object-id='master!table_932387C87A524AA4ADBBE045B2CC719F' />
+            <second-end-point object-id='time!zone!correction_E0694DBE4329424F88EDC326FC40D61A' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Feuille 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dog_id_max_ranks+ (Connexions multiples)' name='federated.025i01h1pzpka01en5m5z1lou60i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.025i01h1pzpka01en5m5z1lou60i'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country]' derivation='Count' name='[cnt:Country:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.025i01h1pzpka01en5m5z1lou60i].[cnt:Country:qk]</rows>
+        <cols>[federated.025i01h1pzpka01en5m5z1lou60i].[none:Country:nk]</cols>
+      </table>
+      <simple-id uuid='{811A7C2E-2D92-4305-B308-7BC158086139}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Feuille 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.025i01h1pzpka01en5m5z1lou60i].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3A4897A9-C51F-443F-84E8-EB11153B2564}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Feuille 1' width='192'>
+      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
+      XyFWH3ny7/z/sMUzfhMbqSUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
